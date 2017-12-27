@@ -46,7 +46,7 @@
             this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonLogin.ForeColor = System.Drawing.Color.White;
             this.buttonLogin.Location = new System.Drawing.Point(44, 128);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(104, 35);
             this.buttonLogin.TabIndex = 0;
@@ -80,7 +80,7 @@
             // 
             this.textBoxLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxLogin.Location = new System.Drawing.Point(16, 38);
-            this.textBoxLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxLogin.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(164, 23);
             this.textBoxLogin.TabIndex = 3;
@@ -89,7 +89,7 @@
             // 
             this.textBoxPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxPass.Location = new System.Drawing.Point(16, 89);
-            this.textBoxPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPass.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.PasswordChar = '*';
             this.textBoxPass.Size = new System.Drawing.Size(164, 23);
@@ -98,12 +98,13 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(8, 167);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(172, 19);
             this.button1.TabIndex = 5;
             this.button1.Text = "Внести польователей в базу";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // LoginForm
@@ -117,7 +118,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonLogin);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LoginForm";
             this.Text = "Вход";
             this.ResumeLayout(false);
