@@ -35,7 +35,7 @@ namespace WindowsFormsApp1
 
                     switch (user.Role.NameRole)
                     {
-                        case "Исполнитель":
+                        case "Субподряд":
                             {
                                 var form = new Forms.OrderAcceptForm();
                                 form.Show();
