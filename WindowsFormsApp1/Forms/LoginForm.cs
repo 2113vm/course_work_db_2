@@ -65,6 +65,7 @@ namespace WindowsFormsApp1
         {
             using(ApplicationContext db = new ApplicationContext())
             {
+                // test change
                 var role = new Role
                 {
                     Login = "Performer",
