@@ -68,57 +68,71 @@ namespace WindowsFormsApp1
                 // test change
                 var role = new Role
                 {
-                    Login = "Performer",
-                    NameRole = "Исполнитель",
-                    Password = "IamPerformer"
+                    Login = "Subcontractor",
+                    NameRole = "Субподряд",
+                    Password = "subcon"
                 };
 
                 var role1 = new Role
                 {
-                    Login = "Client",
+                    Login = "Customer",
                     NameRole = "Заказчик",
-                    Password = "IamClient"
+                    Password = "custom"
                 };
 
                 var role2 = new Role
                 {
                     Login = "Admin",
                     NameRole = "Администратор",
-                    Password = "IamAdmin"
+                    Password = "Admin"
                 };
 
                 var user = new User
                 {
-                    Login = "3DiVi",
+                    Login = "NapoleonIT",
                     Password = "123",
                     Role = role
                 };
 
                 var user1 = new User
                 {
-                    Login = "MyCompany",
+                    Login = "RedSolution",
                     Password = "123",
                     Role = role
                 };
 
                 var user2 = new User
                 {
-                    Login = "Завод",
+                    Login = "Contour",
                     Password = "123",
-                    Role = role1
+                    Role = role
                 };
 
                 var user3 = new User
                 {
-                    Login = "Фирма",
+                    Login = "3DiVi",
                     Password = "123",
-                    Role = role1
+                    Role = role
                 };
 
                 var user4 = new User
                 {
-                    Login = "admin",
+                    Login = "ЮУрГУ",
                     Password = "123",
+                    Role = role1
+                };
+
+                var user5 = new User
+                {
+                    Login = "Рога и Копыта",
+                    Password = "123",
+                    Role = role1
+                };
+
+                var user6 = new User
+                {
+                    Login = "admin",
+                    Password = "admin",
                     Role = role2
                 };
 
@@ -178,6 +192,8 @@ namespace WindowsFormsApp1
                 db.Users.Add(user2);
                 db.Users.Add(user3);
                 db.Users.Add(user4);
+                db.Users.Add(user5);
+                db.Users.Add(user6);
 
                 db.Statuses.Add(status);
                 db.Statuses.Add(status1);
