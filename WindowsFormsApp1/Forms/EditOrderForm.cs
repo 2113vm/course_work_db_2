@@ -32,7 +32,7 @@ namespace WindowsFormsApp1.Forms
                 CommentTextBox.Text = currentOrder.Comment;
                 StatusBox.Text = currentOrder.OrderStatus.ToString();
 
-                var performers = db.Users.Where(u => u.Role.NameRole == "Исполнитель");
+                var performers = db.Users.Where(u => u.Role.NameRole == "Субподряд");
                 PerformerBox.Items.AddRange(performers.ToArray());
 
                 PerformerBox.Text = currentOrder.Performer.Login;

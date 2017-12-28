@@ -21,7 +21,7 @@ namespace WindowsFormsApp1.Forms
             {
                 db.Users.Load();
 
-                var performers = db.Users.Where(u => u.Role.NameRole == "Исполнитель");
+                var performers = db.Users.Where(u => u.Role.NameRole == "Субподряд");
 
                 PerformerBox.Items.AddRange(performers.ToArray());
 
